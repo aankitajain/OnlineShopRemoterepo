@@ -21,5 +21,10 @@ class TestController {
 	public ResponseEntity<String> saywelcome(){
 	return new ResponseEntity<String>("Welcome to  All",HttpStatus.OK);
 	}
+	
+	@RequestMapping(value="/sayHelloworld")
+	public ResponseEntity<String> sayHelloworld(){
+	return new ResponseEntity<String>("Welcome to  World",HttpStatus.OK);
+	}
 
 }
